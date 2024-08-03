@@ -16,9 +16,15 @@ python3 -m venv sam2_venv
 source sam2_venv/bin/activate
 pip3 install --upgrade pip
 pip3 install -e .
-pip3 install matplotlib jupyter opencv-python
+pip3 install matplotlib opencv-python
 ```
-
+Optinally, for Jupyter notebook examples, install the jupyter notebook inside the venv.
+```bash
+pip3 install jupyter
+python3 -m ipykernel install --user --name=sam2_venv --display-name "Python (sam2_venv)"
+cd notebooks
+jupyter notebook
+```
 ## Download Checkpoints
 
 All the model checkpoints can be downloaded by running:
@@ -29,13 +35,34 @@ cd checkpoints
 ```
 
 ## Image Inference
-Display and save the image once inferred with SAM2:
+If you want to display the image once inferred with SAM2:
 ```bash
 cd scripts
-python3 image_inference_and_save.py
+python3 image_seg_and_display.py
 ```
 
-![SAM2 Inference](assets/sam2.png?raw=true)
+If you want to save the image once inferred with SAM2:
+```bash
+cd scripts
+python3 image_seg_and_save.py
+```
+
+<div style="display: flex; flex-wrap: wrap;">
+  <div style="flex: 50%; max-width: 50%;">
+    <img src="assets/sam2_b+.png" alt="Image 1" style="width:100%">
+  </div>
+  <div style="flex: 50%; max-width: 50%;">
+    <img src="assets/sam2_l.png" alt="Image 2" style="width:100%">
+  </div>
+  <div style="flex: 50%; max-width: 50%;">
+    <img src="assets/sam2_s.png" alt="Image 3" style="width:100%">
+  </div>
+  <div style="flex: 50%; max-width: 50%;">
+    <img src="assets/sam2_t.png" alt="Image 4" style="width:100%">
+  </div>
+</div>
+
+### Image prediction
 
 SAM 2 has all the capabilities of [SAM](https://github.com/facebookresearch/segment-anything) on static images, and we provide image prediction APIs that closely resemble SAM for image use cases. The `SAM2ImagePredictor` class has an easy interface for image prompting.
 
