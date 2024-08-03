@@ -19,9 +19,7 @@ pip3 install -e .
 pip3 install matplotlib jupyter opencv-python
 ```
 
-## Getting Started
-
-### Download Checkpoints
+## Download Checkpoints
 
 All the model checkpoints can be downloaded by running:
 
@@ -30,7 +28,7 @@ cd checkpoints
 ./download_ckpts.sh
 ```
 
-### Image prediction
+## Image Inference
 To see the demo in action:
 ```bash
 cd scripts
