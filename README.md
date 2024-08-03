@@ -49,17 +49,6 @@ python3 image_seg_and_save.py
 
 <table>
   <tr>
-    <td><img src="assets/sam2_b+.png" alt="Image 1" style="width:100%"></td>
-    <td><img src="assets/sam2_l.png" alt="Image 2" style="width:100%"></td>
-  </tr>
-  <tr>
-    <td><img src="assets/sam2_s.png" alt="Image 3" style="width:100%"></td>
-    <td><img src="assets/sam2_t.png" alt="Image 4" style="width:100%"></td>
-  </tr>
-</table>
-
-<table>
-  <tr>
     <td>
       <figure>
         <img src="assets/sam2_b+.png" alt="Image 1" style="width:100%">
@@ -88,8 +77,6 @@ python3 image_seg_and_save.py
     </td>
   </tr>
 </table>
-
-
 
 
 ### Image prediction
