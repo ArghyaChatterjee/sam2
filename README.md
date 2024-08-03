@@ -29,10 +29,10 @@ cd checkpoints
 ```
 
 ## Image Inference
-To see the demo in action:
+Display and save the image once inferred with SAM2:
 ```bash
 cd scripts
-python3 sam2_demo.py
+python3 image_inference_and_save.py
 ```
 
 ![SAM2 Inference](assets/sam2.png?raw=true)
