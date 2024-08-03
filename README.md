@@ -49,16 +49,16 @@ python3 image_seg_and_save.py
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 50%; max-width: 50%;">
-    <img src="assets/sam2_b+.png" alt="Image 1" style="width:100%">
+    <img src="assets/sam2_b+.png" alt="Image 1" style="width:50%">
   </div>
   <div style="flex: 50%; max-width: 50%;">
-    <img src="assets/sam2_l.png" alt="Image 2" style="width:100%">
+    <img src="assets/sam2_l.png" alt="Image 2" style="width:50%">
   </div>
   <div style="flex: 50%; max-width: 50%;">
-    <img src="assets/sam2_s.png" alt="Image 3" style="width:100%">
+    <img src="assets/sam2_s.png" alt="Image 3" style="width:50%">
   </div>
   <div style="flex: 50%; max-width: 50%;">
-    <img src="assets/sam2_t.png" alt="Image 4" style="width:100%">
+    <img src="assets/sam2_t.png" alt="Image 4" style="width:50%">
   </div>
 </div>
 
