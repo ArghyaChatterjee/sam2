@@ -1,3 +1,4 @@
+import time
 import numpy as np
 import torch
 import matplotlib.pyplot as plt
@@ -61,8 +62,14 @@ sam2 = build_sam2(model_cfg, sam2_checkpoint, device='cuda', apply_postprocessin
 
 mask_generator = SAM2AutomaticMaskGenerator(sam2)
 
+# Measure inference time
+start_time = time.time()
 # Generate masks
 masks = mask_generator.generate(image)
+end_time = time.time()
+
+inference_time = end_time - start_time
+print(f"Inference time: {inference_time:.4f} seconds")
 
 print(len(masks))
 print(masks[0].keys())
