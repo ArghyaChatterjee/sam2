@@ -78,7 +78,7 @@ python3 image_seg_and_save.py
   </tr>
 </table>
 
-With default architectural parameteres, on the above image on a 4070 RTX GPU:
+With default architectural parameters, on the above image on a 4070 RTX GPU:
 
 - No. of objects sam2_l model segmented = 19, time took = 1.1538 s
 - No. of objects sam2_s model segmented = 16, time took = 1.0930 s
