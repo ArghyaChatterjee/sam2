@@ -42,14 +42,14 @@ image = Image.open(image_path)
 image = np.array(image.convert("RGB"))
 
 # Initialize the SAM2 model
-sam2_checkpoint = "/home/arghya/segment-anything-2/checkpoints/sam2_hiera_base_plus.pt"
+# sam2_checkpoint = "/home/arghya/segment-anything-2/checkpoints/sam2_hiera_base_plus.pt"
 # sam2_checkpoint = "/home/arghya/segment-anything-2/checkpoints/sam2_hiera_large.pt"
-# sam2_checkpoint = "/home/arghya/segment-anything-2/checkpoints/sam2_hiera_small.pt"
+sam2_checkpoint = "/home/arghya/segment-anything-2/checkpoints/sam2_hiera_small.pt"
 # sam2_checkpoint = "/home/arghya/segment-anything-2/checkpoints/sam2_hiera_tiny.pt"
 
-model_cfg = "sam2_hiera_b+.yaml"
+# model_cfg = "sam2_hiera_b+.yaml"
 # model_cfg = "sam2_hiera_l.yaml"
-# model_cfg = "sam2_hiera_s.yaml"
+model_cfg = "sam2_hiera_s.yaml"
 # model_cfg = "sam2_hiera_t.yaml"
 
 # Add configuration path to Hydra
