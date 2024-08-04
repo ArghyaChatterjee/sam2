@@ -1,13 +1,13 @@
 # SAM 2: Segment Anything in Images and Videos
 
-**Segment Anything Model 2 (SAM 2)** is a foundation model towards solving promptable visual segmentation in images and videos. We extend SAM to video by considering images as a video with a single frame. The model design is a simple transformer architecture with streaming memory for real-time video processing. We build a model-in-the-loop data engine, which improves model and data via user interaction.
+**Segment Anything Model 2 (SAM 2)** is a foundation model towards solving promptable visual segmentation in images and videos. The model design is a simple transformer architecture with streaming memory for real-time video processing. A model-in-the-loop data engine was built, which improves model and data via user interaction.
 
 ## Platform
 Python 3.10 with PyTorch 2.3.1 (or higher) and cuda 12.1 has been used in this tutorial. 
 
 ## Installation
 
-SAM 2 needs to be installed first before use. The code requires `python>=3.10`, as well as `torch>=2.3.1` and `torchvision>=0.18.1`. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch and TorchVision dependencies. You can install SAM 2 on a GPU machine using:
+SAM 2 requires `python>=3.10`, as well as `torch>=2.3.1` and `torchvision>=0.18.1`. Install SAM 2 on a GPU machine using:
 
 ```bash
 git clone https://github.com/ArghyaChatterjee/segment-anything-2.git
@@ -18,7 +18,7 @@ pip3 install --upgrade pip
 pip3 install -e .
 pip3 install matplotlib opencv-python
 ```
-Optinally, for Jupyter notebook examples, install the jupyter notebook inside the venv.
+Optionally, for Jupyter notebook examples, install the jupyter notebook inside the venv.
 ```bash
 pip3 install jupyter
 python3 -m ipykernel install --user --name=sam2_venv --display-name "Python (sam2_venv)"
@@ -78,17 +78,17 @@ python3 image_seg_and_save.py
   </tr>
 </table>
 
-With default configuration:
+With default architectural parameteres of each sam2 models:
 
-- No. of objects sam2_l was able to segment = 19
-- No. of objects sam2_s was able to segment = 16
-- No. of objects sam2_b+ was able to segment = 13
-- No. of objects sam2_t was able to segment = 10
+- No. of objects sam2_l was able to segment on the above image = 19
+- No. of objects sam2_s was able to segment on the above image = 16
+- No. of objects sam2_b+ was able to segment on the above image = 13
+- No. of objects sam2_t was able to segment on the above image = 10
 
 
 ### Image prediction
 
-SAM 2 has all the capabilities of [SAM](https://github.com/facebookresearch/segment-anything) on static images, and we provide image prediction APIs that closely resemble SAM for image use cases. The `SAM2ImagePredictor` class has an easy interface for image prompting.
+SAM 2 has all the capabilities of [SAM](https://github.com/facebookresearch/segment-anything) on static images, and image prediction APIs have been provided that closely resemble SAM for image use cases. The `SAM2ImagePredictor` class has an easy interface for image prompting.
 
 ```python
 import torch
