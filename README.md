@@ -78,13 +78,14 @@ python3 image_seg_and_save.py
   </tr>
 </table>
 
-With default architectural parameteres of each sam2 models:
+With default architectural parameteres, on the above image on a 4070 RTX GPU:
 
-- No. of objects sam2_l was able to segment on the above image = 19
-- No. of objects sam2_s was able to segment on the above image = 16
-- No. of objects sam2_b+ was able to segment on the above image = 13
-- No. of objects sam2_t was able to segment on the above image = 10
+- No. of objects sam2_l model segmented = 19, time took = 1.1538 s
+- No. of objects sam2_s model segmented = 16, time took = 1.0930 s
+- No. of objects sam2_b+ model segmented = 13, time took = 1.0872 s
+- No. of objects sam2_t model segmented = 11, time took = 1.0726 s
 
+N.B: Time was a bit variable for each model on the above image when inferred multiple times but somewhat near the time mentioned above. Also, the no. of objects each model segmented were the same when inferred multiple times. 
 
 ### Image prediction
 
