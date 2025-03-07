@@ -10,8 +10,8 @@ Python 3.10 with PyTorch 2.3.1 (or higher) and cuda 12.1 has been used in this t
 SAM 2 requires `python>=3.10`, as well as `torch>=2.3.1` and `torchvision>=0.18.1`. Install SAM 2 on a GPU machine using:
 
 ```bash
-git clone https://github.com/ArghyaChatterjee/segment-anything-2.git
-cd segment-anything-2
+git clone https://github.com/ArghyaChatterjee/sam2.git
+cd sam2
 python3 -m venv sam2_venv
 source sam2_venv/bin/activate
 pip3 install --upgrade pip
